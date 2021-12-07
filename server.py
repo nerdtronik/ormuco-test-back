@@ -1,4 +1,4 @@
-from openstack.openstack import getToken, verifyData
+from openstack.openstack import getToken
 from openstack.Nova import Nova
 import os
 from os import environ as env

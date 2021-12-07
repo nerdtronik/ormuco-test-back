@@ -33,7 +33,7 @@ class Nova(object):
         r.raise_for_status()
         return r.json()["flavors"]
 
-    def createServer(self, token: str, name: str, keyPair: str, networks, flavor: str, image: str, version: str = "2.1") -> dict:
+    def createServer(self, token: str, name: str, keyPair: str, networks, flavor: str, image: str, version: str = "2") -> dict:
         headers = {"Content-Type": "application/json",
                    "X-Auth-Token": token}
         url = f"https://api-acloud.ormuco.com:8774/v{version}/{self.id}/servers"

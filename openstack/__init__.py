@@ -1,2 +1,2 @@
-from .openstack import getToken, verifyData
+from .openstack import getToken
 from .Nova import Nova
